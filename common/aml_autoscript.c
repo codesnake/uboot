@@ -8,7 +8,7 @@ int aml_autoscript(void)
 #ifdef SCAN_MMC_PARTITION
 	if(run_command ("mmcinfo", 0))
 	{
-		printf("##aml_autoscript---ERROR: SD card not find!!!\n");
+		printf("##aml_autoscript---ERROR: SD card not found!!!\n");
 	}
 	else
 	{
@@ -28,7 +28,7 @@ int aml_autoscript(void)
 #ifdef SCAN_USB_PARTITION
 	if(!run_command ("usb start", 0))
 	{
-		printf("##aml_autoscript---ERROR: USB device not find!!!\n");
+		printf("##aml_autoscript---ERROR: USB device not found!!!\n");
 	}
 	else
 	{
