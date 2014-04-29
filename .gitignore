@@ -1,0 +1,85 @@
+#
+# NOTE! Don't add files that are generated in specific
+# subdirectories here. Add them in the ".gitignore" file
+# in that subdirectory instead.
+#
+# Normal rules
+#
+
+*.rej
+*.orig
+*.a
+*.o
+*~
+*.swp
+*.patch
+
+#
+# Top-level generic files
+#
+
+/System.map
+/u-boot
+/u-boot.hex
+/u-boot.imx
+/u-boot.map
+/u-boot.bin
+/u-boot.srec
+/u-boot.ldr
+/u-boot.ldr.hex
+/u-boot.ldr.srec
+/u-boot.lds
+/u-boot-onenand.bin
+/u-boot-flexonenand.bin
+/build
+/include/configs/amlogic
+include/configs/customer
+/customer
+arch/arm/cpu/aml_meson/m6/firmware/arc_power/boot_code.dat
+arch/arm/cpu/aml_meson/m6/power_firmware.dat
+arch/arm/cpu/aml_meson/m6tv/power_firmware.dat
+arch/arm/cpu/aml_meson/m8/power_firmware.dat
+arch/arm/cpu/aml_meson/m8/firmware/m8_smp.dat
+
+#
+# Generated files
+#
+
+arch/arm/cpu/aml_meson/m6/power_firmware.dat
+arch/arm/cpu/aml_meson/m6/firmware/arc_power/boot_code.dat
+arch/arm/cpu/aml_meson/m6tv/power_firmware.dat
+arch/arm/cpu/aml_meson/m8/power_firmware.dat
+arch/arm/cpu/aml_meson/m8/firmware/m8_smp.dat
+
+
+*.depend
+/LOG
+/errlog
+/reloc_off
+
+/include/generated/
+/lib/asm-offsets.s
+
+# stgit generated dirs
+patches-*
+.stgit-edit.txt
+
+# quilt's files
+patches
+series
+
+# gdb files
+.gdb_history
+
+# cscope files
+cscope.*
+
+# tags files
+/tags
+/ctags
+/etags
+
+# OneNAND IPL files
+/onenand_ipl/onenand-ipl*
+/onenand_ipl/board/*/onenand*
+/onenand_ipl/board/*/*.S
